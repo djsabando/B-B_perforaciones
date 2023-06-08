@@ -2013,7 +2013,7 @@ progress {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #777e85;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -11284,7 +11284,6 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #71706f;
-  opacity: 70%;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
