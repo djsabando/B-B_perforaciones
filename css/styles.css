@@ -2855,6 +2855,17 @@ textarea.form-control-lg {
   border-color: var(--bs-btn-disabled-border-color);
   opacity: var(--bs-btn-disabled-opacity);
 }
+.btn-primary #submitButton{
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #61b382;
+  --bs-btn-hover-border-color: #61b382;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
 
 .btn-primary {
   --bs-btn-color: #fff;
@@ -10954,6 +10965,8 @@ p {
     margin-right: 0;
   }
 }
+
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
@@ -10964,8 +10977,9 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
