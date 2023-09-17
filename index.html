@@ -6,7 +6,14 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>B&B -  Ingeniería y Perforaciones de pozos</title>
+        <title>B&B - Ingeniería y Perforaciones de pozos</title>
+        <link href="css/wsp_style.css" rel="stylesheet">
+        <!-- BootStrap-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -21,13 +28,23 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/developer.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+
     </head>
     <body id="page-top">
+
+        <link rel="stylesheet" href="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a
+            href="https://api.whatsapp.com/send?phone=593991176211&text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20los%20pozos."
+            class="float" target="_blank">
+            <i class="fa-brands fa-whatsapp my-float "></i>
+        </a>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
+            <div class="container" id="containerBar">
                 <a class="navbar-brand" href="#page-top"><img
-                        src="assets/img/navbar-logoo.jpg" alt="..." /></a>
+                        src="assets/img/logo.jpeg" alt="..." /></a>
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false"
@@ -44,23 +61,70 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Sobre
                                 Nosotros</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#contactSection">Contactos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-heading text-uppercase">!Dí adiós a las
+        <header>
+            <!-- <div class="masthead-heading text-uppercase">!Dí adiós a las
                     facturas, agua pura y sin límites!</div>
                 <div class="masthead-subheading">Obtén independencia hídrica y
                     seguridad con un suministro constante y confiable de agua,
                     eliminando las facturas y reduciendo costos a largo plazo.</div>
                 <a class="btn btn-primary btn-xl text-uppercase"
-                    href="#services">Conoce Más</a>
-            </div>
+                    href="#services">Conoce Más</a> -->
+
         </header>
+        <div class="container-fluid">
+
+            <div id="carouselExampleIndicators" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/inicio/front.jpeg"
+                            class="miMa d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/inicio/baner2.jpg"
+                            class="miMa d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/inicio/baner3.jpg"
+                            class="miMa d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -71,7 +135,8 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img src="./assets/img/perforar.png" alt="" class="img-inge">
+                            <img src="./assets/img/perforar.png" alt
+                                class="img-inge">
                         </span>
                         <h4 class="my-3 mt-5">Perforaciones</h4>
                         <ul>
@@ -83,9 +148,10 @@
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img src="./assets/img/escoba.png" alt="" class="img-inge">
+                            <img src="./assets/img/escoba.png" alt
+                                class="img-inge">
                         </span>
-                        
+
                         <h4 class="my-3 mt-5">Limpieza y Mantenimiento</h4>
                         <ul>
                             <li>Rehabilitación</li>
@@ -96,9 +162,10 @@
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img src="./assets/img/ingenieria.png" alt="" class="img-inge">
+                            <img src="./assets/img/ingenieria.png" alt
+                                class="img-inge">
                         </span>
-                        
+
                         <h4 class="my-3 mt-5">Obras Civiles</h4>
                         <ul>
                             <li>Pilotes</li>
@@ -115,7 +182,6 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Galería</h2>
-                    <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -174,51 +240,64 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0"> -->
-                    <!-- Portfolio item 4-->
-                    <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal"
+                                href="#portfolioModal4">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i
+                                            class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <img class="img-fluid"
+                                    src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                                <div
+                                    class="portfolio-caption-subheading text-muted">Branding</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"> -->
-                    <!-- Portfolio item 5-->
-                    <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal"
+                                href="#portfolioModal5">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i
+                                            class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <img class="img-fluid"
+                                    src="assets/img/portfolio/5.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                                <div
+                                    class="portfolio-caption-subheading text-muted">Website
+                                    Design</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6"> -->
-                    <!-- Portfolio item 6-->
-                    <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal"
+                                href="#portfolioModal6">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    <div class="portfolio-hover-content"><i
+                                            class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <img class="img-fluid"
+                                    src="assets/img/portfolio/6.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                                <div
+                                    class="portfolio-caption-subheading text-muted">Photography</div>
                             </div>
-                        </div> -->
-                    <!-- </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -239,9 +318,14 @@
                                 <h4>90's</h4>
                                 <h4 class="subheading">Nuestros inicios</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Durante la etapa inicial de nuestra empresa, 
-                                contamos con la invaluable colaboración de nuestro abuelo, quien poseía una vasta experiencia en la construcción de pozos. 
-                                En los años 90, nos aventuramos en este camino, empleando métodos empíricos que nos permitieron adquirir conocimientos valiosos.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Durante
+                                    la etapa inicial de nuestra empresa,
+                                    contamos con la invaluable colaboración de
+                                    nuestro abuelo, quien poseía una vasta
+                                    experiencia en la construcción de pozos.
+                                    En los años 90, nos aventuramos en este
+                                    camino, empleando métodos empíricos que nos
+                                    permitieron adquirir conocimientos valiosos.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -251,11 +335,16 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2003</h4>
-                                <h4 class="subheading">Crecimiento Profesional y Técnico</h4>
+                                <h4 class="subheading">Crecimiento Profesional y
+                                    Técnico</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Fortalecimos nuestro equipo con profesionales 
-                                expertos en construcción de pozos y adquirimos maquinaria especializada. Esto elevó la 
-                                calidad de nuestros servicios, permitiendo abordar proyectos de mayor envergadura. </p></div>
+                            <div class="timeline-body"><p class="text-muted">Fortalecimos
+                                    nuestro equipo con profesionales
+                                    expertos en construcción de pozos y
+                                    adquirimos maquinaria especializada. Esto
+                                    elevó la
+                                    calidad de nuestros servicios, permitiendo
+                                    abordar proyectos de mayor envergadura. </p></div>
                         </div>
                     </li>
                     <li>
@@ -265,12 +354,19 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2009</h4>
-                                <h4 class="subheading">Transición a nuevos servicios</h4>
+                                <h4 class="subheading">Transición a nuevos
+                                    servicios</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Decidimos ampliar nuestros 
-                                servicios para abarcar el barrenado de pilotes y obras civiles en general. 
-                                Con el respaldo de nuestro equipo de ingenieros civiles y técnicos especializados en el área, 
-                                estábamos preparados para enfrentar nuevos desafíos y ofrecer soluciones integrales a nuestros clientes. </p></div>
+                            <div class="timeline-body"><p class="text-muted">Decidimos
+                                    ampliar nuestros
+                                    servicios para abarcar el barrenado de
+                                    pilotes y obras civiles en general.
+                                    Con el respaldo de nuestro equipo de
+                                    ingenieros civiles y técnicos especializados
+                                    en el área,
+                                    estábamos preparados para enfrentar nuevos
+                                    desafíos y ofrecer soluciones integrales a
+                                    nuestros clientes. </p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -280,13 +376,19 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2014</h4>
-                                <h4 class="subheading">Expansión a nivel nacional</h4>
+                                <h4 class="subheading">Expansión a nivel
+                                    nacional</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Experimentamos una 
-                                exitosa expansión a nivel nacional, ampliando nuestra presencia 
-                                en diversas regiones. Esta expansión nos permitió atender a un 
-                                mayor número de clienteso. Estamos orgullosos de nuestro crecimiento a nivel 
-                                nacional y de la confianza que hemos ganado en todo el país.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Experimentamos
+                                    una
+                                    exitosa expansión a nivel nacional,
+                                    ampliando nuestra presencia
+                                    en diversas regiones. Esta expansión nos
+                                    permitió atender a un
+                                    mayor número de clientes. Estamos orgullosos
+                                    de nuestro crecimiento a nivel
+                                    nacional y de la confianza que hemos ganado
+                                    en todo el país.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -347,166 +449,188 @@
                 </div>
             </div>
         </section> -->
-        <!-- Clients-->
-        <!-- <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
         <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
+        <section class="page-section" id="contactSection">
+
+            <!-- Clients-->
+            <section class="page-section bg-light" id="Clientes">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contactos</h2>
-                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                    <h2 class="section-heading text-uppercase">Nuestros Clientes</h2>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <div class="row align-items-stretch mb-5">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
 
-                        <div class="row">
+                <!-- CAROUSEL DE CLIENTES  -->
+                <div class="slider" id="carruselClientes">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/agripac.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/sembra.png"
+                                height="100"
+                                width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/calademar.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/refristore.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/agripac.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/sembra.png"
+                                height="100"
+                                width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/calademar.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/refristore.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/agripac.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/sembra.png"
+                                height="100"
+                                width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/calademar.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/refristore.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/agripac.png"
+                                height="100" width="250" alt />
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/Clientes/sembra.png"
+                                height="100"
+                                width="250" alt />
+                        </div>
 
-                            <!--lado izquierdo -->
+                    </div>
 
-                            <div class="list-contacto git col-md-6" style="background: rgb(97, 179, 130);">
-                                <article class="p-4 mt-5">
-                                    <ul>
-                                        <li class="p-2"><strong>LLÁMANOS</strong></li>
-                                        <li class="p-2">Teléfonos: 04-222-2222 / 02-222-2222 /</li>
-                                        <li class="p-2">Celular: 0999999999 / 0999999999</li>
+                </div>
+                <!-- CAROUSEL DE CLIENTES  -->
 
-                                        <li class="p-2"><strong>CORREO ELECTRÓNICO</strong></li>
-                                        <li class="p-2">correo1@dominio.com</li>
+            </section>
+            <!-- Clients-->
 
-                                    </ul>
-                                </article>
-                            </div>
+            <section class="page-section" id="contact">
+                <div class="container">
 
-                            <!--lado izquierdo -->
+                    <div class="row">
+                        <div class="col-md-4" style="color: #fff">
 
-                            <!--lado derecho -->
+                            <h3 class="my-3 mt-5" ">Contactos</h3>
+                            <ul style="padding: 0; ">
 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <!-- Name input-->
-                                    <input class="form-control" id="name"
-                                        type="text" placeholder="Nombre *"
-                                        data-sb-validations="required" />
-                                    <div class="invalid-feedback"
-                                        data-sb-feedback="name:required">Nombre
-                                        requerido.</div>
-                                </div>
-                                <div class="form-group">
-                                    <!-- Email address input-->
-                                    <input class="form-control" id="email"
-                                        type="email" placeholder="Email *"
-                                        data-sb-validations="required,email" />
-                                    <div class="invalid-feedback"
-                                        data-sb-feedback="email:required">Email
-                                        requerido.</div>
-                                    <div class="invalid-feedback"
-                                        data-sb-feedback="email:email">Email no es
-                                        válido.</div>
-                                </div>
-                                <div class="form-group mb-md-0">
-                                    <!-- Phone number input-->
-                                    <input class="form-control" id="phone"
-                                        type="tel" placeholder="Teléfono *"
-                                        data-sb-validations="required" />
-                                    <div class="invalid-feedback"
-                                        data-sb-feedback="phone:required">Teléfono
-                                        requerido.</div>
-                                </div>
-
-                                <div class="form-group mb-md-0 mt-4">
-                                    <div class="form-group form-group-textarea mb-md-0">
-                                        <!-- Message input-->
-                                        <textarea class="form-control" id="message"
-                                            placeholder="Mensaje *"
-                                            data-sb-validations="required"></textarea>
-                                        <div class="invalid-feedback"
-                                            data-sb-feedback="message:required">Se
-                                            requiere ingresar un mensaje.</div>
+                                <li><h5>Correo Electrónico</h5> </li>
+                                <li>
+                                    <div class="pagelayer-email-holder">
+                                        <span class="pagelayer-email-icon"><i
+                                                class="fas fa-envelope"></i></span>
+                                        <span class="pagelayer-email">bb.ingenieriadepozos@hotmail.com</span>
                                     </div>
-                                </div>
-                            </div>
 
-                            <!--lado derecho -->
+                                </li>
+                                <br>
 
-                            
-    
-                            
+                                <li><h5>Celular - whatsapp</h5> </li>
+                                <li>
+                                    <div pagelayer-id="wrt3469"
+                                        class="p-wrt3469 pagelayer-phone">
+                                        <style pagelayer-style-id="wrt3469">.p-wrt3469 .pagelayer-phone *, .p-wrt3469 .pagelayer-phone{color:#ffffff;font-family: Helvetica; font-size: px !important; font-style:  !important; font-weight:  !important; font-variant:  !important; text-decoration-line:  !important; text-decoration-style:  !important; line-height: em !important; text-transform:  !important; letter-spacing: px !important; word-spacing: px !important}
+                                        body:not(.rtl) .p-wrt3469 .pagelayer-phone-icon{margin-right: 14px}
+                                        body.rtl .p-wrt3469 .pagelayer-phone-icon{margin-left:14px}
+                                        .p-wrt3469 .pagelayer-phone-icon i{color:#ffffff;font-size: 23px}
+                                        </style><div
+                                            class="pagelayer-phone-holder">
+                                            <span class="pagelayer-phone-icon"><i
+                                                    class="fas fa-phone-alt"></i></span>
+
+                                            <span class="pagelayer-phone">+593991176211</span>
+
+                                        </div></div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" style="color: #fff">
+
+                            <h4 class="my-3 mt-5">Servicios</h4>
+                            <ul style="padding: 0;">
+                                <li>Rehabilitación</li>
+                                <li>Inspección y diagnóstico</li>
+                                <li>Mantenimiento preventivo </li>
+                                <li>Desincrustación</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" style="color: #fff">
+
+                            <h4 class="my-3 mt-5">Ubicación</h4>
+                            <ul style="padding: 0;">
+                                <li>
+                                    <div class="pagelayer-address-holder">
+                                        <span class="pagelayer-address-icon"><i
+                                                class="fas fa-map-marker-alt"></i></span>
+                                        <span class="pagelayer-address">Rcto.
+                                            Tres Postes, Vía Yaguachi - Jujan</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="location">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63798.62132114768!2d-79.604989!3d-1.9892720000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d3bcca2eda42b%3A0x83028127d9d00cb!2sB%26B%20Perforaciones!5e0!3m2!1ses!2sec!4v1694901032279!5m2!1ses!2sec"
+                                            width="600" height="450"
+                                            style="border:0;"
+                                            allowfullscreen loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                    </div>
+                                </li>
+                            </ul>
 
                         </div>
+                    </div>
 
-                        
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a
-                                href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div
-                            class="text-center text-danger mb-3">Error sending
-                            message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button
-                            class="btn btn-primary btn-xl text-uppercase disabled"
-                            id="submitButton" type="submit">Enviar</button></div>
-                </form>
-            </div>
+                </div>
+
+            </section>
+
         </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <!-- <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div> -->
+
                     <div class="justify-content-center">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
                         <a class="btn btn-dark btn-social mx-2" href="#!"
                             aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"
                             aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <!-- <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div> -->
+
                 </div>
             </div>
         </footer>
+
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1"
@@ -803,7 +927,11 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -815,3 +943,60 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+<!-- <div pagelayer-id="tvt6521" class="p-tvt6521 pagelayer-list">
+    <style pagelayer-style-id="tvt6521">.p-tvt6521 li{list-style-type: none}
+    .p-tvt6521 .pagelayer-list-icon-holder{padding-bottom: calc(10px/2); padding-top: calc(10px/2)}
+    .p-tvt6521 .pagelayer-list-item{color:#f9f8f8;margin-left: 10px}
+    .p-tvt6521 .pagelayer-list-icon{color:#f8f9f9;font-size: 23px}
+    </style><ul class="pagelayer-list-ul pagelayer-list-type-none"><div
+            pagelayer-id="ttx2373" class="p-ttx2373 pagelayer-list_item">
+            <li class="pagelayer-list-li">
+
+                <span class="pagelayer-list-icon-holder">
+                    <i class="pagelayer-list-icon fas fa-eject"></i>
+                    <span class="pagelayer-list-item">&nbsp;Pruebas de bombeo de
+                        agua</span>
+                </span>
+
+            </li></div><div pagelayer-id="g962811"
+            class="p-g962811 pagelayer-list_item">
+            <li class="pagelayer-list-li">
+
+                <span class="pagelayer-list-icon-holder">
+                    <i class="pagelayer-list-icon fas fa-adjust"></i>
+                    <span class="pagelayer-list-item">&nbsp;Modelaje de mantos
+                        acuíferos</span>
+                </span>
+
+            </li></div><div pagelayer-id="nvy3452"
+            class="p-nvy3452 pagelayer-list_item">
+            <li class="pagelayer-list-li">
+
+                <span class="pagelayer-list-icon-holder">
+                    <i class="pagelayer-list-icon fas fa-chess-rook"></i>
+                    <span class="pagelayer-list-item">&nbsp; Rehabilitación de
+                        pozos</span>
+                </span>
+
+            </li></div><div pagelayer-id="gbk8599"
+            class="p-gbk8599 pagelayer-list_item">
+            <li class="pagelayer-list-li">
+
+                <span class="pagelayer-list-icon-holder">
+                    <i class="pagelayer-list-icon fas fa-file-pdf"></i>
+                    <span class="pagelayer-list-item">&nbsp; Trámites para pozos
+                        de agua</span>
+                </span>
+
+            </li></div><div pagelayer-id="xv59113"
+            class="p-xv59113 pagelayer-list_item">
+            <li class="pagelayer-list-li">
+
+                <span class="pagelayer-list-icon-holder">
+                    <i class="pagelayer-list-icon fas fa-filter"></i>
+                    <span class="pagelayer-list-item">&nbsp;Perforación de pozos
+                        profundos</span>
+                </span>
+
+            </li></div></ul></div> -->

@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 
  .placeholder-6 {
 	width: 1366px;
@@ -638,8 +628,20 @@ progress {
   color: #6c757d;
 }
 
+.container-fluid{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  height: 10%;
+  
+  padding: 0;
+  margin: 0;
+
+
+}
+
+
 .container,
-.container-fluid,
 .container-xxl,
 .container-xl,
 .container-lg,
@@ -5818,6 +5820,7 @@ ul{
 .carousel-inner {
   position: relative;
   width: 100%;
+  height: 710px;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -7801,8 +7804,8 @@ ul{
 }
 
 .py-4 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .py-5 {
@@ -10866,7 +10869,7 @@ p {
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -10931,15 +10934,15 @@ p {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     border: none;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
     background-color: #ffffff;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1em;
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
@@ -10947,8 +10950,8 @@ p {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #ffffff;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -10972,7 +10975,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: left;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  /* background-image: url("../assets/img/header-bg.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11283,10 +11286,12 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #71706f;
-  background-image: url("../assets/img/map-image.png");
+  /* background-color: #71706f; */
+  background-color: #5c5b5a;
+  background-image: url("../assets/img/map-image12.png");
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 0;
   
 }
 section#contact .section-heading {
